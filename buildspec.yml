@@ -4,8 +4,8 @@ phases:
   install: 
     runtime-versions:
       nodejs: 14
-  build: 
-    commands: 
+build: 
+  commands: 
       - aws s3 sync ./build/ s3://newbucketkani
 artifacts:
   files: "**/*"

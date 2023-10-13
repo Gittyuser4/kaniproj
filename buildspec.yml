@@ -4,7 +4,7 @@ phases:
   install: 
     runtime-versions:
       nodejs: v16.7.0
-  post_build: null
-  commands: aws s3 sync . s3://newbucketkani
+  post_build: 
+    commands: aws s3 sync . s3://newbucketkani
 artifacts:
   files: "**/*"

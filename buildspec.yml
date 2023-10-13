@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       nodejs: 14
   post_build: 
-    commands: aws s3 sync . s3://newbucketkani
+    commands: 
+      - aws s3 sync ./build/ s3://newbucketkani
 artifacts:
   files: "**/*"

@@ -6,6 +6,6 @@ phases:
       nodejs: 14
 build: 
   commands: 
-      - aws s3 sync ./build/ s3://newbucketkani
+    - aws s3 sync ./build/ s3://newbucketkani
 artifacts:
   files: "**/*"
